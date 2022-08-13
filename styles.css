@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-image: url('./files/fundo.svg');
+    background-color: bisque;
+    background-size: cover;
+
+    font-family: 'Libre Baskerville', serif;
+}
+ 
+body header{
+    width: 90%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    font-size: 1.4rem;
+}
+
+body header p{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+
+header img{
+    width: 12rem;
+    border-radius: 100%;
+}
+
+header img:nth-of-type(2){
+    width: 2rem;
+    color: #F69E9D;
+    border-radius: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    align-items: center;
+    gap: 1rem;
+    flex: 0.6;
+
+    font-size: 1.3rem;
+
+}
+
+main a{
+    text-decoration: none;
+    color: black;
+    background: #F69E9D;
+    line-height: 3.5rem;
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+footer a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+@media(max-width: 540px){
+    img{
+        width: 10rem;
+    }
+}
+
+@media(max-width: 300px){
+    html{
+      font-size: 50%;
+    }
+}
